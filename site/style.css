@@ -1,0 +1,143 @@
+.login{
+    width: 750px;
+    height: 909px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.label1{
+    width: 420px;
+    height: 75px;
+    color: #959EA4;
+}
+.input1{
+    width: 420px;
+    height: 45px;
+    font-size: 14px;
+    color: #1C294D;
+    outline: none;
+}
+.label2{
+    width: 205px;
+    height: 75px;
+    color: #5d5f61;
+}
+.input2{
+    width: 205px;
+    height:45px;
+    font-size: 14px;
+    color: #1C294D;
+    outline: none;
+}
+
+body{
+    background-color: #f7f8f8;
+    font-style: Roboto;
+}
+
+.maindiv{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: top;
+}
+
+header{
+    margin-left: 50px;
+}
+
+.login_radio{
+    display: flex;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    height: 50px;
+    width: 660px;
+    flex-direction: flex-start;
+    gap: 0px;
+}
+
+.login_radio-item{
+    display: inline-block;
+}
+
+.login_radio input[type=radio]{
+    display: none;
+}
+
+.login_radio label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 50px;
+    user-select: none;
+}
+
+
+.login_radio label:hover{
+    background-color: white;
+    line-height: 44px;
+}
+
+.person{
+    display: flex;
+    gap: 5px;
+    width: 320px;
+    height: 60px;
+    background-color: #F9F9FA;
+    ;
+}
+
+.person img{
+    width: 20.83px;
+    height: 20.83px;
+}
+
+.sidebar{
+    width: 360px;
+    height: 461px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.sidebar_buttons{
+    display: flex;
+    width: 330px;
+    height: 50px;
+    flex-direction: column;
+       
+}
+
+.sidebar_buttons label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 50px;
+    user-select: none;
+    border-top: 1px solid #2A3D4826;
+}
+
+.sidebar_buttons input[type=radio]{
+    display: none;
+}
+
+.sidebar_buttons label:hover{
+    color: #FC6E1D;
+    border-left: 3px solid #FC6E1D;
+}
+
+.sidebar_buttons label:last-child{
+    color: #FF3347;
+
+}
