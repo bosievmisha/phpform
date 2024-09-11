@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Мой кабинет</h1>
+    </header>
+    <div class="maindiv">
+    <div class="sidebar">
+        <div class="person">
+            <img src="../icons/icon.png" alt="">
+            <h3>Михаил Босиев</h3>
+            <h4>Покупатель</h4>
+        </div>
+        <div class="sidebar_buttons">
+                <input type="radio" name="side" value="My profile">
+                <label for="Profile">Мой профиль</label>
+       
+                <input type="radio" name="side" value="Statut Club">
+                <label for="Statut Club">Statut Club</label>
+            
+                <input type="radio" name="side" value="orders">
+                <label for="Orders">Заказы</label>
+            
+                <input type="radio" name="side" value="Chosen items">
+                <label for="Chosen items">Избранные товары</label>
+            
+                <input type="radio" name="side" value="feedback">
+                <label for="Feedback">Отзывы о товарах</label>
+            
+                <input type="radio" name="side" value="Exit">
+                <label for="Exit">Выход</label>
+           
+        </div>
+    </div>
+    <div class="login">
+        <h2>Мой профиль</h2>
+        <div class="login_radio">
+            <input type="radio" name="Menu" value="Personal data">
+            <label for="Private">Личные данные</label>
+            <input type="radio" name="Menu" value="Delivery address">
+            <label for="Addresses">Адреса доставки</label>
+            <input type="radio" name="Menu" value="Password">
+            <label for="Password">Пароль</label>
+        </div>
+            <form class="label1">
+                <label for="email">E-mail
+                <input class="input1" type="email" required>
+            </label><br>
+            </form>
+            <div class="phone">
+                <form class="label2">
+                    <label for="phone">Номер телефона
+                    <input class="input2" type="tel" required>
+                    </label><br>
+                </form>
+                <form class="label2">
+                    <label for="secphone">Дополнительный номер
+                    <input class="input2" type="tel">
+                    </label><br>
+                </form>
+            </div>
+            <form class="label1">
+                <label for="surname">Фамилия
+                <input class="input1" type="text" required>
+                </label><br>
+            </form>
+            <form class="label1">
+                <label for="name">Имя
+                <input class="input1" type="text" required>
+                </label><br>
+            </form>
+            <form class="label1">
+                <label for="fathername">Отчество
+                <input class="input1" type="text">
+                </label><br>
+            </form>
+            <div>
+                <select name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month">
+                    <option value="1">Январь</option>
+                    <option value="2">Февралт</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                </select>
+                <select name="">
+                    <option value="">1993</option>
+                </select>
+            </div>
+
+            <form>
+                <input type="radio" name="Sex" value="Male">
+                <label for="Male">Мужской</label>
+                <input type="radio" name="Sex" value="Female">
+                <label for="Female">Женский</label>
+            </form>
+            <button>Сохранить изменения</button>
+        </div>
+</body>
+</html>
