@@ -39,7 +39,7 @@ h4{
 .label2{
     width: 205px;
     height: 75px;
-    color: #5d5f61;
+    color: #959EA4;
 }
 .input2{
     width: 205px;
@@ -49,9 +49,13 @@ h4{
     outline: none;
 }
 
+.label3{
+    color: #959EA4;
+}
+
 body{
     background-color: #f7f8f8;
-    font-style: Roboto;
+    font-family: Roboto;
 }
 
 .maindiv{
@@ -115,6 +119,7 @@ header{
     width: 40px;
     justify-content: center;
     align-self: center;
+    flex-direction: flex-start;
 }
 .person img{
     object-fit: contain;
