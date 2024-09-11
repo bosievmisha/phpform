@@ -1,3 +1,12 @@
+h3{
+    size: 16px;
+}
+
+h4{
+    size: 14px
+}
+
+
 .login{
     width: 750px;
     height: 909px;
@@ -89,16 +98,26 @@ header{
 
 .person{
     display: flex;
+    flex-direction: flex-start;
     gap: 5px;
     width: 320px;
     height: 60px;
     background-color: #F9F9FA;
-    ;
 }
 
+.person h4{
+    color: rgba(28, 41, 77, 0.5);
+
+}
+.smiley-wrap{
+    display:flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-self: center;
+}
 .person img{
-    width: 20.83px;
-    height: 20.83px;
+    object-fit: contain;
 }
 
 .sidebar{
