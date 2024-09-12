@@ -35,6 +35,7 @@ h4{
     font-size: 14px;
     color: #1C294D;
     outline: none;
+    border: 1px solid #DFE2E4;
 }
 .label2{
     width: 205px;
@@ -47,6 +48,7 @@ h4{
     font-size: 14px;
     color: #1C294D;
     outline: none;
+    border: 1px solid #DFE2E4;
 }
 
 .label3{
@@ -78,6 +80,7 @@ header{
     gap: 0px;
     color: rgba(85, 100, 109, 1);
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .login_radio-item{
@@ -91,9 +94,11 @@ header{
 .login_radio label{
     display: inline-block;
     cursor: pointer;
+    text-align: center;
     padding: 0px 15px;
-    line-height: 50px;
+    line-height: 44px;
     user-select: none;
+    
 }
 
 
@@ -201,6 +206,7 @@ header{
 .sidebar_buttons label:hover{
     color: #FC6E1D;
     border-left: 3px solid #FC6E1D;
+    border-radius: 5px;
 }
 
 .sidebar_buttons label:last-child{
@@ -221,4 +227,19 @@ header{
 .savechanges:hover{
     background-color: #FC6E1D;
     color: white;
+}
+
+.day-of-birth{
+    padding-left: 15px;
+    outline: none;
+}
+
+.birth-select{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #DFE2E4;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
 }

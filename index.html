@@ -40,7 +40,7 @@
            
         </div>
     </div>
-    <div class="login">
+    <form class="login" action="validation.php" method="POST">
         <h2>Мой профиль</h2>
         <div class="login_radio">
             <input type="radio" name="Menu" value="Personal data">
@@ -50,103 +50,106 @@
             <input type="radio" name="Menu" value="Password">
             <label for="Password">Пароль</label>
         </div>
-            <form class="label1">
+            <div class="label1">
                 <label for="email">E-mail
-                <input class="input1" type="email" required>
+                <input class="input1" type="email" name="email" required>
             </label>
-            </form>
+        </div>
             <div class="phone">
-                <form class="label2">
+                <div class="label2">
                     <label for="phone">Номер телефона
-                    <input class="input2" type="tel" required>
+                    <input class="input2" type="tel" name="phone_number" pattern="(\+7[0-9]{10}$)" maxlength="12" minlength="11" required>
                     </label>
-                </form>
-                <form class="label2">
+                </div>
+                <div class="label2">
                     <label for="secphone">Дополнительный номер
-                    <input class="input2" type="tel">
+                    <input class="input2" type="tel" name="phone_number2" pattern="^\+7[1-9]{10}$" maxlength="12" minlength="11">
                     </label>
-                </form>
+                </div>
             </div>
-            <form class="label1">
+            <div class="label1">
                 <label for="surname">Фамилия
-                <input class="input1" type="text" required>
+                <input class="input1" type="text" name="name" required>
                 </label>
-            </form>
-            <form class="label1">
+            </div>
+            <div class="label1">
                 <label for="name">Имя
-                <input class="input1" type="text" required>
+                <input class="input1" type="text" name="name" required>
                 </label>
-            </form>
-            <form class="label1">
+            </div>
+            <div class="label1">
                 <label for="fathername">Отчество
-                <input class="input1" type="text">
+                <input class="input1" type="text" name="fathername">
                 </label>
-            </form>
+            </div>
         <div>
             <label class="label3">Дата рождения<br>
-                <select name="day">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
+                <select class="birth-select" name="day">
+                    <option class="day-of-birth birth-select" value="1">1</option>
+                    <option class="day-of-birth birth-select" value="2">2</option>
+                    <option class="day-of-birth birth-select" value="3">3</option>
+                    <option class="day-of-birth birth-select" value="4">4</option>
+                    <option class="day-of-birth birth-select" value="5">5</option>
+                    <option class="day-of-birth birth-select" value="6">6</option>
+                    <option class="day-of-birth birth-select" value="7">7</option>
+                    <option class="day-of-birth birth-select" value="8">8</option>
+                    <option class="day-of-birth birth-select" value="9">9</option>
+                    <option class="day-of-birth birth-select" value="10">10</option>
+                    <option class="day-of-birth birth-select" value="11">11</option>
+                    <option class="day-of-birth birth-select" value="12">12</option>
+                    <option class="day-of-birth birth-select" value="13">13</option>
+                    <option class="day-of-birth birth-select" value="14">14</option>
+                    <option class="day-of-birth birth-select" value="15">15</option>
+                    <option class="day-of-birth birth-select" value="16">16</option>
+                    <option class="day-of-birth birth-select" value="17">17</option>
+                    <option class="day-of-birth birth-select" value="18">18</option>
+                    <option class="day-of-birth birth-select" value="19">19</option>
+                    <option class="day-of-birth birth-select" value="20">20</option>
+                    <option class="day-of-birth birth-select" value="21">21</option>
+                    <option class="day-of-birth birth-select" value="22">22</option>
+                    <option class="day-of-birth birth-select" value="23">23</option>
+                    <option class="day-of-birth birth-select" value="24">24</option>
+                    <option class="day-of-birth birth-select" value="25">25</option>
+                    <option class="day-of-birth birth-select" value="26">26</option>
+                    <option class="day-of-birth birth-select" value="27">27</option>
+                    <option class="day-of-birth birth-select" value="28">28</option>
+                    <option class="day-of-birth birth-select" value="29">29</option>
+                    <option class="day-of-birth birth-select" value="30">30</option>
+                    <option class="day-of-birth birth-select"  value="31">31</option>
                 </select>
-                <select name="month">
-                    <option value="1">Январь</option>
-                    <option value="2">Февралт</option>
-                    <option value="3">Март</option>
-                    <option value="4">Апрель</option>
-                    <option value="5">Май</option>
-                    <option value="6">Июнь</option>
-                    <option value="7">Июль</option>
-                    <option value="8">Август</option>
-                    <option value="9">Сентябрь</option>
-                    <option value="10">Октябрь</option>
-                    <option value="11">Ноябрь</option>
-                    <option value="12">Декабрь</option>
+                <select class="birth-select" name="month">
+                    <option class="day-of-birth birth-select" value="1">Январь</option>
+                    <option class="day-of-birth birth-select" value="2">Февраль</option>
+                    <option class="day-of-birth birth-select" value="3">Март</option>
+                    <option class="day-of-birth birth-select" value="4">Апрель</option>
+                    <option class="day-of-birth birth-select" value="5">Май</option>
+                    <option class="day-of-birth birth-select" value="6">Июнь</option>
+                    <option class="day-of-birth birth-select" value="7">Июль</option>
+                    <option class="day-of-birth birth-select" value="8">Август</option>
+                    <option class="day-of-birth birth-select" value="9">Сентябрь</option>
+                    <option class="day-of-birth birth-select" value="10">Октябрь</option>
+                    <option class="day-of-birth birth-select" value="11">Ноябрь</option>
+                    <option class="day-of-birth birth-select" value="12">Декабрь</option>
                 </select>
-                <select>
-                    <option value="">1993</option>
+                <select class="birth-select">
+                    <option class="day-of-birth birth-select" value="">1993</option>
                 </select>
             </label>
          </div>
          <label class="label3">Пол<br></label>
             <div class="sex">
-                <input type="radio" id="male" name="Sex" value="0">
+                <input type="radio" id="male" name="Sex" value="Male">
                 <label for="male">Мужской</label>
                 
-                <input type="radio" id="female" name="Sex" value="1">
+                <input type="radio" id="female" name="Sex" value="Female">
                 <label for="female">Женский</label>
             </div>
-            <button class="savechanges">Сохранить изменения</button>
-        </div>
-        
+            <div>
+                <input class="savechanges" type="submit" name="savebutton" value="Сохранить изменения">
+            </div>
+            
+            
+    </form>
     </div>
 </body>
 </html>
