@@ -1,29 +1,36 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = htmlspecialchars(trim($_POST['email']));
-        $name = htmlspecialchars(trim($_POST['name']));
-        $surname = htmlspecialchars(trim($_POST['surname']));
-        $fathername = htmlspecialchars(trim($_POST['fathername']));
-        $phone_number = htmlspecialchars(trim($_POST['phone_number']));
-        $phone_number2 = htmlspecialchars(trim($_POST['phone_number2']));
-    
-        if (empty($name) || empty($email) || empty($surname) || empty($phone_number)) {
-            echo "Все поля обязательны для заполнения.";
-            exit;
-        }
-        else{
-            echo "Ты молодец";
-            exit;
-        }
-    
-        $to = $email;
-        $subject = "Новое сообщение с сайта";
-        $message = "Имя: $name\nEmail: $email";
-        $headers = "From: {$email}";
-    
-        if (mail($to, $subject, $message, $headers)) {
-            echo "Сообщение успешно отправлено!";
-        } else {
-            echo "Ошибка при отправке сообщения.";
+    $response = ['success' => 'false', 'errors' => []];
+
+    $email = $_POST['email'] ?? '';
+    $phone_number = $_POST['phone_number'] ?? '';
+    $surname = $_POST['surname'] ?? '';
+    $name = $_POST['name'] ?? '';
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $response['errors']['email'] = 'Введите корректный email';
+    }
+
+    if (empty($phone_number) || strlen($phone_number) < 11 || strlen($phone_number) > 12) {
+        $response['errors']['phone_number'] = 'Введите корректный номер телефона';
+    }
+
+    if (empty($surname)) {
+        $response['errors']['surname'] = 'Это обязательное поле';
+    }
+
+    if (empty($name)) {
+        $response['errors']['name'] = 'Это обязательное поле';
+    }
+
+    // Если нет ошибок, отправляем письмо
+    if (empty($response['errors'])) {
+        $to = "your-email@example.com";
+        $subject = "Новая заявка с формы";
+        $message = "Email: $email\nТелефон: $phone_number\nФамилия: $surname\nИмя: $name";
+
+    if (mail($to, $subject, $message)) {
+            $response['success'] = 'true';
         }
     }
+
+    echo json_encode($response);
