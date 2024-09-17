@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Мой кабинет</h1>
+    </header>
+<div class="maindiv">
+    <div class="sidebar">
+        <div class="person">
+            <div class="smiley-wrap">
+                <img src="../icons/icon.png" alt="">
+            </div>
+            <h3>Михаил Босиев</h3>
+            <h4>Покупатель</h4>
+        </div>
+        <div class="sidebar_buttons">
+                <input type="radio" name="side" value="My profile">
+                <label for="Profile">Мой профиль</label>
+       
+                <input type="radio" name="side" value="Statut Club">
+                <label for="Statut Club">Statut Club</label>
+            
+                <input type="radio" name="side" value="orders">
+                <label for="Orders">Заказы</label>
+            
+                <input type="radio" name="side" value="Chosen items">
+                <label for="Chosen items">Избранные товары</label>
+            
+                <input type="radio" name="side" value="feedback">
+                <label for="Feedback">Отзывы о товарах</label>
+            
+                <input type="radio" name="side" value="Exit">
+                <label for="Exit">Выход</label>
+           
+        </div>
+    </div>
+    <form class="login" action="validation.php" method="POST">
+        <h2>Мой профиль</h2>
+        <div class="login_radio">
+            <input type="radio" name="Menu" value="Personal data">
+            <label for="Private">Личные данные</label>
+            <input type="radio" name="Menu" value="Delivery address">
+            <label for="Addresses">Адреса доставки</label>
+            <input type="radio" name="Menu" value="Password">
+            <label for="Password">Пароль</label>
+        </div>
+            <div class="label1">
+                <label for="email">E-mail
+                <input class="input1" type="email" name="email" required>
+            </label>
+        </div>
+            <div class="phone">
+                <div class="label2">
+                    <label for="phone">Номер телефона
+                    <input class="input2" type="tel" name="phone_number" maxlength="12" minlength="11" required>
+                    </label>
+                </div>
+                <div class="label2">
+                    <label for="secphone">Дополнительный номер
+                    <input class="input2" type="tel" name="phone_number2" maxlength="12" minlength="11">
+                    </label>
+                </div>
+            </div>
+            <div class="label1">
+                <label for="surname">Фамилия
+                <input class="input1" type="text" name="surname" required>
+                </label>
+            </div>
+            <div class="label1">
+                <label for="name">Имя
+                <input class="input1" type="text" name="name" required>
+                </label>
+            </div>
+            <div class="label1">
+                <label for="fathername">Отчество
+                <input class="input1" type="text" name="fathername">
+                </label>
+            </div>
+        <div>
+            <label class="label3">Дата рождения<br>
+                <select class="birth-select" name="day">
+                    <option class="day-of-birth birth-select" value="1">1</option>
+                    <option class="day-of-birth birth-select" value="2">2</option>
+                    <option class="day-of-birth birth-select" value="3">3</option>
+                    <option class="day-of-birth birth-select" value="4">4</option>
+                    <option class="day-of-birth birth-select" value="5">5</option>
+                    <option class="day-of-birth birth-select" value="6">6</option>
+                    <option class="day-of-birth birth-select" value="7">7</option>
+                    <option class="day-of-birth birth-select" value="8">8</option>
+                    <option class="day-of-birth birth-select" value="9">9</option>
+                    <option class="day-of-birth birth-select" value="10">10</option>
+                    <option class="day-of-birth birth-select" value="11">11</option>
+                    <option class="day-of-birth birth-select" value="12">12</option>
+                    <option class="day-of-birth birth-select" value="13">13</option>
+                    <option class="day-of-birth birth-select" value="14">14</option>
+                    <option class="day-of-birth birth-select" value="15">15</option>
+                    <option class="day-of-birth birth-select" value="16">16</option>
+                    <option class="day-of-birth birth-select" value="17">17</option>
+                    <option class="day-of-birth birth-select" value="18">18</option>
+                    <option class="day-of-birth birth-select" value="19">19</option>
+                    <option class="day-of-birth birth-select" value="20">20</option>
+                    <option class="day-of-birth birth-select" value="21">21</option>
+                    <option class="day-of-birth birth-select" value="22">22</option>
+                    <option class="day-of-birth birth-select" value="23">23</option>
+                    <option class="day-of-birth birth-select" value="24">24</option>
+                    <option class="day-of-birth birth-select" value="25">25</option>
+                    <option class="day-of-birth birth-select" value="26">26</option>
+                    <option class="day-of-birth birth-select" value="27">27</option>
+                    <option class="day-of-birth birth-select" value="28">28</option>
+                    <option class="day-of-birth birth-select" value="29">29</option>
+                    <option class="day-of-birth birth-select" value="30">30</option>
+                    <option class="day-of-birth birth-select"  value="31">31</option>
+                </select>
+                <select class="birth-select" name="month">
+                    <option class="day-of-birth birth-select" value="1">Январь</option>
+                    <option class="day-of-birth birth-select" value="2">Февраль</option>
+                    <option class="day-of-birth birth-select" value="3">Март</option>
+                    <option class="day-of-birth birth-select" value="4">Апрель</option>
+                    <option class="day-of-birth birth-select" value="5">Май</option>
+                    <option class="day-of-birth birth-select" value="6">Июнь</option>
+                    <option class="day-of-birth birth-select" value="7">Июль</option>
+                    <option class="day-of-birth birth-select" value="8">Август</option>
+                    <option class="day-of-birth birth-select" value="9">Сентябрь</option>
+                    <option class="day-of-birth birth-select" value="10">Октябрь</option>
+                    <option class="day-of-birth birth-select" value="11">Ноябрь</option>
+                    <option class="day-of-birth birth-select" value="12">Декабрь</option>
+                </select>
+                <select class="birth-select">
+                    <option class="day-of-birth birth-select" value="">1993</option>
+                </select>
+            </label>
+         </div>
+         <label class="label3">Пол<br></label>
+            <div class="sex">
+                <input type="radio" id="male" name="Sex" value="Male">
+                <label for="male">Мужской</label>
+                
+                <input type="radio" id="female" name="Sex" value="Female">
+                <label for="female">Женский</label>
+            </div>
+            <div>
+                <input class="savechanges" type="submit" name="savebutton" value="Сохранить изменения">
+            </div>
+            
+            
+    </form>
+    </div>
+</body>
+</html>

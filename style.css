@@ -1,0 +1,245 @@
+h3{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 14px
+}
+
+
+.login{
+    width: 750px;
+    height: 909px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.label1{
+    width: 420px;
+    height: 75px;
+    color: #959EA4;
+}
+.input1{
+    width: 420px;
+    height: 45px;
+    font-size: 14px;
+    color: #1C294D;
+    outline: none;
+    border: 1px solid #DFE2E4;
+}
+.label2{
+    width: 205px;
+    height: 75px;
+    color: #959EA4;
+}
+.input2{
+    width: 205px;
+    height:45px;
+    font-size: 14px;
+    color: #1C294D;
+    outline: none;
+    border: 1px solid #DFE2E4;
+}
+
+.label3{
+    color: #959EA4;
+}
+
+body{
+    background-color: #f7f8f8;
+    font-family: Roboto;
+}
+
+.maindiv{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: top;
+}
+
+header{
+    margin-left: 50px;
+}
+
+.login_radio{
+    display: flex;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    height: 50px;
+    width: 660px;
+    flex-direction: flex-start;
+    gap: 0px;
+    color: rgba(85, 100, 109, 1);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.login_radio-item{
+    display: inline-block;
+}
+
+.login_radio input[type=radio]{
+    display: none;
+}
+
+.login_radio label{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 44px;
+    user-select: none;
+    
+}
+
+
+.login_radio label:hover{
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 1);
+
+ 
+}
+
+.sex{
+    display: flex;
+    overflow: hidden;
+    flex-direction: flex-start;
+    gap: 5px;
+}
+
+.sex label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 50px;
+    width: 130px;
+    text-align: center;
+    user-select: none;
+    border-radius: 6px;
+    border: 1px solid rgba(223, 226, 228, 1);
+}
+
+.sex-item{
+    display: inline-block;
+}
+
+.sex input[type=radio]{
+    display: none;
+}
+
+.sex label:hover{
+    color: rgba(255, 122, 0, 1);
+    border: 1px solid rgba(255, 122, 0, 1);
+}
+
+.sex input[type="radio"]:checked + label{
+    color: rgba(255, 122, 0, 1);
+    border: 1px solid rgba(255, 122, 0, 1);
+}
+
+.person{
+    display: flex;
+    flex-direction: flex-start;
+    gap: 5px;
+    width: 320px;
+    height: 60px;
+    background-color: #F9F9FA;
+}
+
+.person h4{
+    color: rgba(28, 41, 77, 0.5);
+
+}
+.smiley-wrap{
+    display:flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-self: center;
+    flex-direction: flex-start;
+}
+.person img{
+    object-fit: contain;
+}
+
+.sidebar{
+    width: 360px;
+    height: 461px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.sidebar_buttons{
+    display: flex;
+    width: 330px;
+    height: 50px;
+    flex-direction: column;
+       
+}
+
+.sidebar_buttons label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 50px;
+    user-select: none;
+    border-top: 1px solid #2A3D4826;
+}
+
+.sidebar_buttons input[type=radio]{
+    display: none;
+}
+
+.sidebar_buttons label:hover{
+    color: #FC6E1D;
+    border-left: 3px solid #FC6E1D;
+    border-radius: 5px;
+}
+
+.sidebar_buttons label:last-child{
+    color: #FF3347;
+}
+
+.savechanges{
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(223, 226, 228, 1);;
+    background-color: white;
+    color: #1C294D;
+}
+
+.savechanges:hover{
+    background-color: #FC6E1D;
+    color: white;
+}
+
+.day-of-birth{
+    padding-left: 15px;
+    outline: none;
+}
+
+.birth-select{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #DFE2E4;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+}
