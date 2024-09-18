@@ -98,17 +98,15 @@ header{
     padding: 0px 15px;
     line-height: 44px;
     user-select: none;
-    
+
+    &:hover{
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
 }
 
 
-.login_radio label:hover{
-    background-color: white;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 1);
-
- 
-}
 
 .sex{
     display: flex;
@@ -127,6 +125,11 @@ header{
     user-select: none;
     border-radius: 6px;
     border: 1px solid rgba(223, 226, 228, 1);
+
+    &:hover{
+        color: rgba(255, 122, 0, 1);
+        border: 1px solid rgba(255, 122, 0, 1);
+    }
 }
 
 .sex-item{
@@ -135,16 +138,11 @@ header{
 
 .sex input[type=radio]{
     display: none;
-}
 
-.sex label:hover{
-    color: rgba(255, 122, 0, 1);
-    border: 1px solid rgba(255, 122, 0, 1);
-}
-
-.sex input[type="radio"]:checked + label{
-    color: rgba(255, 122, 0, 1);
-    border: 1px solid rgba(255, 122, 0, 1);
+    &:checked + label{
+        color: rgba(255, 122, 0, 1);
+        border: 1px solid rgba(255, 122, 0, 1);
+    }
 }
 
 .person{
@@ -197,21 +195,22 @@ header{
     line-height: 50px;
     user-select: none;
     border-top: 1px solid #2A3D4826;
+
+    &:hover{
+        color: #FC6E1D;
+        border-left: 3px solid #FC6E1D;
+        border-radius: 5px;
+    }
+
+    &:last-child{
+        color: #FF3347;
+    }
 }
 
 .sidebar_buttons input[type=radio]{
     display: none;
 }
 
-.sidebar_buttons label:hover{
-    color: #FC6E1D;
-    border-left: 3px solid #FC6E1D;
-    border-radius: 5px;
-}
-
-.sidebar_buttons label:last-child{
-    color: #FF3347;
-}
 
 .savechanges{
     width: 270px;
@@ -222,12 +221,13 @@ header{
     border: 1px solid rgba(223, 226, 228, 1);;
     background-color: white;
     color: #1C294D;
+
+    &:hover{
+        background-color: #FC6E1D;
+        color: white;
+    }
 }
 
-.savechanges:hover{
-    background-color: #FC6E1D;
-    color: white;
-}
 
 .day-of-birth{
     padding-left: 15px;
